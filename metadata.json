@@ -1,0 +1,6 @@
+{
+  "name": "AURA | Luxury Architectural Assets & Spatial Design",
+  "description": "Award-winning luxury home designs, interactive 3D property tours, architectural material specs, arithmetic budget calculators, real-time market valuations, and AI floor plan generative architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+    --font-mono: 'Space Grotesk', monospace;
+    
+    /* Theme Palette: Light Olive & Beige */
+    --bg-light-olive: #e8ece0;
+    --bg-card: #f5f7f0;
+    --border-beige: #d9ccb6;
+    --text-primary: #1e261b;
+    --text-muted: #536049;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #e8ece0;
+    color: #1e261b;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+
+  .font-technical {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Light Olive Architectural Blueprint Pattern */
+.bg-blueprint {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(90, 105, 75, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(90, 105, 75, 0.08) 1px, transparent 1px);
+}
+
+.bg-blueprint-fine {
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, rgba(160, 140, 100, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(160, 140, 100, 0.15) 1px, transparent 1px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #e2e7d8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5b69f;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ab9b82;
+}
+
+/* Glassmorphic Beige/Olive Panels */
+.glass-panel {
+  background: rgba(245, 247, 240, 0.85);
+  backdrop-filter: blur(16px);
+  border: 2px solid #d9ccb6;
+}
+
+/* Beige Card Styling Class */
+.beige-box {
+  background-color: #f7f9f2;
+  border: 2px solid #d9ccb6;
+  box-shadow: 0 4px 20px -2px rgba(80, 90, 70, 0.06);
+}
+
+.beige-dashboard {
+  background-color: #f2f5eb;
+  border: 2px solid #d9ccb6;
+}
+
+.beige-image {
+  border: 2px solid #d9ccb6;
+}
